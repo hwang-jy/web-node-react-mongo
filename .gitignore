@@ -1,3 +1,7 @@
+#
+server/config/*.json
+!server/config/*.template.json
+
 # Logs
 logs
 *.log
