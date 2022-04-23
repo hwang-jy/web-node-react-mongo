@@ -1,12 +1,11 @@
-import { Link } from 'react-router-dom';
+import GoogleLoginBtn from '../components/google/GoogleLogin';
 
 const Home = () => {
     return (
         <div>
             <h1>Home</h1>
-            <p>this page is home</p>
-            <Link to="/">Go Home</Link>
-            <Link to="/About">Go About</Link>
+            <p>Hello, this page is Homepage!</p>
+            <p><GoogleLoginBtn /></p>
         </div>
     );
 }

@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "server": "cd server && nodemon server",
-    "client": "cd client && yarn start",
+    "client": "cd client && yarn start .env",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
   },
   "author": "",
@@ -16,7 +16,8 @@
     "http-errors": "^2.0.0",
     "mongodb": "^4.5.0",
     "mongoose": "^6.3.0",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "socket.io": "^4.4.1"
   },
   "devDependencies": {
     "concurrently": "^7.1.0",
