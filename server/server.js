@@ -9,7 +9,8 @@ const port = 5000;
 
 /** database */
 import db from './db.js';
-import todo from './models/todo.js';
+import contents from './models/contents.js';
+import counters from './models/counters.js';
 
 /** middleware */
 import createError from 'http-errors';

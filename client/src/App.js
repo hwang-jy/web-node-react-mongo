@@ -16,12 +16,11 @@ import Articles from './pages/Articles';
 import Login from './pages/Login';
 import MyPage from './pages/MyPage';
 
+import Content from './components/content/Content';
+
 import './App.css';
 
 function App() {
-
-  console.log(process.env.REACT_APP_GOOGLE_CLIENT_ID);
-
   return (
     <div>
       <Routes>
@@ -33,6 +32,10 @@ function App() {
 
           <Route path="/articles" element={<Articles />} >
             <Route path=":id" element={<Article />} />
+          </Route>
+
+          <Route path="/contents">
+            <Route path=":id" element={<Content />} />
           </Route>
 
           <Route path="/login" element={<Login />} />

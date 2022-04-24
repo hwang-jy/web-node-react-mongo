@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 const ip = "172.17.0.2";
 const port = "27017";
-const db = "todos";
+const db = "penpal";
 const mongoUrl = `mongodb://${ip}:${port}/${db}`;
 
 async function connectDatabase(){

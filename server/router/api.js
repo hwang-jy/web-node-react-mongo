@@ -1,17 +1,15 @@
 import express from 'express';
-import todo from '../models/todo.js';
+import contents from '../models/contents.js';
+import contentsApi from './contentsApi.js';
+import countersApi from './countersApi.js';
+
 const router = express();
 
+router.use('/contents', contentsApi);
+router.use('/counters', countersApi);
+
 router.get('/', (req, res) => {
-  res.send("is api");
-});
-
-router.get('/test', (req, res) => {
-  todo.find({}, {_id:false, name:true}, (err, result) => {
-    if(err) throw err;
-
-    res.send(`${req.originalUrl} received data ${result}`);
-  });
+  res.send({"name":"is api"});
 });
 
 export default router;
