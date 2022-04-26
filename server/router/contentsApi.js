@@ -37,9 +37,4 @@ router.get('/:id', (req, res) => {
     });
 });
 
-router.put('/write', (req, res) => {
-  //res.send('update...');
-});
-
-
 export default router;

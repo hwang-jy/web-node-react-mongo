@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "server": "cd server && nodemon server",
-    "client": "cd client && yarn start .env",
+    "client": "cd client && npm start",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
   },
   "author": "",
